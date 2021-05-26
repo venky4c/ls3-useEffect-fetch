@@ -14,9 +14,10 @@ function Main() {
   return (
     <div>
       {result.map(item => (
-        <div key={item.id}>
-          <p>Email: &nbsp{item.email}</p>
+        <div key={item.id} style={{boxShadow: '5px 5px 3px teal'}}>
+          <p>Email: &nbsp;{item.email}</p>
           <p>FirstName: {item.first_name}</p>
+          <img src={item.avatar} alt="none" />
         </div>
       ))}
     </div>
